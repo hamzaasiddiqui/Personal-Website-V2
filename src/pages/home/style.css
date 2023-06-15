@@ -75,6 +75,7 @@ section {
   background-size: cover;
   background-position: center;
   position: relative;
+  margin-right: 50px;
 }
 
 .intro_sec .h_bg-image .block {

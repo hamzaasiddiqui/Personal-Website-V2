@@ -4,9 +4,11 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import Marquee from "react-fast-marquee";
-import { Avatar } from "@readyplayerme/visage";
+import HeroImg from "../../assets/images/HS-Avatar.png"
 
-const modelSrc = "https://models.readyplayer.me/6487546d3133f8119d3cdfb0.glb";
+// import { Avatar } from "@readyplayerme/visage";
+
+// const modelSrc = "https://models.readyplayer.me/6487546d3133f8119d3cdfb0.glb";
 
 export const Home = () => {
   return (
@@ -19,13 +21,14 @@ export const Home = () => {
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
           <div className="h_bg-image order-1 order-lg-2 h-100 ">
-            <Avatar
+            {/* <Avatar
               dirLightColor="#da0037"
               dirLightIntensity={30}
               cameraTarget={1.63}
               cameraInitialDistance={0.6}
               modelSrc={modelSrc}
-            />
+            /> */}
+            <img src={HeroImg} alt="hero-image" />
           </div>
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
